@@ -1,0 +1,31 @@
+.size-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.size-selector button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.size-selector button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.size-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.size-button.active {
+  background-color: #333;
+  color: #fff;
+}

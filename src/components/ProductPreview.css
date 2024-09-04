@@ -1,0 +1,55 @@
+.product-preview {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-preview div {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.product-preview-text {
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-preview .text-overlay {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.product-preview .size-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.download-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,31 @@
+.pattern-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pattern-selector button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pattern-selector button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.pattern-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pattern-button.active {
+  background-color: #333;
+  color: #fff;
+}
