@@ -31,7 +31,7 @@ function ProductPreview({
     position: "relative",
     backgroundImage:
       selectedPattern !== "None"
-        ? `url(/images/${selectedPattern.toLowerCase().replace(" ", "_")}.png)`
+        ? `url(/images/${selectedPattern.toLowerCase().replace(" ", "-")}.png)`
         : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
