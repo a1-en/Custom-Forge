@@ -27,23 +27,7 @@ function Customizer() {
     "Navy",
   ];
   const sizes = ["S", "M", "L", "XL"];
-  const patterns = [
-    "None",
-    "Stripes",
-    "Polka Dots",
-    "Plaid",
-    "Chevron",
-    "Floral",
-    "Geometric",
-    "Camouflage",
-    "Abstract",
-    "Argyle",
-    "Tie-Dye",
-    "Gingham",
-    "Damask",
-    "Brocade",
-    "Quatrefoil",
-  ];
+  const patterns = ["None", "Stripes", "Polka Dots", "Plaid"];
 
   return (
     <div className="customizer">

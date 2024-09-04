@@ -55,6 +55,7 @@ function ProductPreview({
   const handleDownload = () => {
     const productElement = document.getElementById("product-with-text");
 
+    // @ts-ignore
     html2canvas(productElement).then((canvas) => {
       const link = document.createElement("a");
       link.download = "custom-product.png";
@@ -66,8 +67,18 @@ function ProductPreview({
   return (
     <div>
       <div id="product-with-text">
-        <div style={productStyle}></div>
-        {customText && <div style={textStyle}>{customText}</div>}
+        <div
+          // @ts-ignore
+          style={productStyle}
+        ></div>
+        {customText && (
+          <div
+            // @ts-ignore
+            style={textStyle}
+          >
+            {customText}
+          </div>
+        )}
       </div>
       <button className="download-button" onClick={handleDownload}>
         Download Image
