@@ -31,7 +31,9 @@ function ProductPreview({
     position: "relative",
     backgroundImage:
       selectedPattern !== "None"
-        ? `url(/images/${selectedPattern.toLowerCase().replace(" ", "-")}.png)`
+        ? `url(${process.env.PUBLIC_URL}/images/${selectedPattern
+            .toLowerCase()
+            .replace(" ", "-")}.png)`
         : "none",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -53,7 +55,6 @@ function ProductPreview({
   const handleDownload = () => {
     const productElement = document.getElementById("product-with-text");
 
-    // @ts-ignore
     html2canvas(productElement).then((canvas) => {
       const link = document.createElement("a");
       link.download = "custom-product.png";
@@ -65,27 +66,8 @@ function ProductPreview({
   return (
     <div>
       <div id="product-with-text">
-        <div
-          // @ts-ignore
-          style={productStyle}
-        >
-          <div
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-              fontSize: selectedStyle.fontSize,
-            }}
-          ></div>
-        </div>
-        {customText && (
-          <div
-            // @ts-ignore
-            style={textStyle}
-          >
-            {customText}
-          </div>
-        )}
+        <div style={productStyle}></div>
+        {customText && <div style={textStyle}>{customText}</div>}
       </div>
       <button className="download-button" onClick={handleDownload}>
         Download Image
